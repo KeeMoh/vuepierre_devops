@@ -1,0 +1,16 @@
+
+# Add users to the system. Users are added after groups are added.
+users:
+  - default
+  - name: terraform
+    gecos: terraform
+    shell: /bin/bash
+    primary_group: hashicorp
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: users, admin
+    lock_passwd: false
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCjStkdxm4+3qagkPfoeigsUHTaTr6DNghjzsa1rE8FitzkMo3xRcEQc7D+9xPfOeab4pbQgWV+BOfW3WmGyJl0fOVaJCMJKdgHPQDqVqeOAdNfiUnfpXSmAcdUQz21dIXBiqWrBsmNzzWUmU9dVXnk0c1yRfAt8R1PcWGx/PKI7UOWrkh9IwnYLBWcAARbvVyS8KUCP953s3qdLooqp6SvBVKVtdUcSNKBIrKDt8JZ+TrI/rwSKgRLNmb/TbitDKsn7HURb4+HVHet9y1651XmNE91m3jXeNGxFT8GdiYoLdR4KPC4mxj/nFFX1IQU8aWT3X8e6UUiJseDjoa3dX1dIQj/0qoHgMOJnfNGOk2luHgUtxLSMjcyh6ZP03F4Ef4TFN7PZF62lQhwA4SAF8DE57JFGsvmFa/cNi5Ynll52CJYIjl52BPNYyB2e9qFVkp3Sc9Km0k/GBIwr+9hES+LaCaqORMN8+kgJRmjyTnOAOSoG3K/ZTZ3jdvm6XWUR7k= pierre.vue@ynov.com
+
+
+

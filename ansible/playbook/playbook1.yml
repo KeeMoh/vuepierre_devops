@@ -1,0 +1,11 @@
+---
+# ansible-playbook -i inventory/hosts playbook/playbook1.yml
+- name: "prerequisite"
+  hosts: app
+  tasks:
+ - name: "Create user application"
+   become: yes
+   user:
+    name: "app_adm"
+   name: "Install java"
+

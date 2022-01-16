@@ -1,0 +1,7 @@
+-name: install apache
+become: yes
+tasks:
+  -name: ensure httpd is installed
+  yum:
+    name: httpd
+    notify:
